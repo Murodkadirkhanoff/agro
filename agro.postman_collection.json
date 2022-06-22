@@ -1,0 +1,538 @@
+{
+	"info": {
+		"_postman_id": "b366351c-18d0-4ca2-a304-7018818f7869",
+		"name": "agro",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Company",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "company_name",
+									"value": "Company 1",
+									"type": "default"
+								},
+								{
+									"key": "director",
+									"value": "Director",
+									"type": "default"
+								},
+								{
+									"key": "address",
+									"value": "Address",
+									"type": "default"
+								},
+								{
+									"key": "email",
+									"value": "email@test.com",
+									"type": "default"
+								},
+								{
+									"key": "website",
+									"value": "website.com",
+									"type": "default"
+								},
+								{
+									"key": "phone_number",
+									"value": "+998999999999",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/company",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"company"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show Single",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/company/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"company",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "company_name",
+									"value": "Company 1",
+									"type": "default"
+								},
+								{
+									"key": "director",
+									"value": "Director",
+									"type": "default"
+								},
+								{
+									"key": "address",
+									"value": "Address",
+									"type": "default"
+								},
+								{
+									"key": "email",
+									"value": "email@test.com",
+									"type": "default"
+								},
+								{
+									"key": "website",
+									"value": "website.com",
+									"type": "default"
+								},
+								{
+									"key": "phone_number",
+									"value": "+998999999999",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/company/1?company_name=Company name Updated&director=Director Updated&address=Address Updated&email=email@updated.com&website=website.update&phone_number=+998999999997",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"company",
+								"1"
+							],
+							"query": [
+								{
+									"key": "company_name",
+									"value": "Company name Updated"
+								},
+								{
+									"key": "director",
+									"value": "Director Updated"
+								},
+								{
+									"key": "address",
+									"value": "Address Updated"
+								},
+								{
+									"key": "email",
+									"value": "email@updated.com"
+								},
+								{
+									"key": "website",
+									"value": "website.update"
+								},
+								{
+									"key": "phone_number",
+									"value": "+998999999997"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "company_name",
+									"value": "Company 1",
+									"type": "default"
+								},
+								{
+									"key": "director",
+									"value": "Director",
+									"type": "default"
+								},
+								{
+									"key": "address",
+									"value": "Address",
+									"type": "default"
+								},
+								{
+									"key": "email",
+									"value": "email@test.com",
+									"type": "default"
+								},
+								{
+									"key": "website",
+									"value": "website.com",
+									"type": "default"
+								},
+								{
+									"key": "phone_number",
+									"value": "+998999999999",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/company/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"company",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/company",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"company"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Employee",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "passport",
+									"value": "ZZ1234567",
+									"type": "default"
+								},
+								{
+									"key": "last_name",
+									"value": "Familiya",
+									"type": "default"
+								},
+								{
+									"key": "first_name",
+									"value": "Ism",
+									"type": "default"
+								},
+								{
+									"key": "middle_name",
+									"value": "Sharifi",
+									"type": "default"
+								},
+								{
+									"key": "position",
+									"value": "buxgalter",
+									"type": "default"
+								},
+								{
+									"key": "phone_number",
+									"value": "+998999999999",
+									"type": "default"
+								},
+								{
+									"key": "address",
+									"value": "Address",
+									"type": "default"
+								},
+								{
+									"key": "company_id",
+									"value": "2",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/employee",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"employee"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show Single",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/employee/3",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"employee",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/employee/3?passport=ZZ1234569&last_name=Familiya updated&first_name=Ism updated&middle_name=Sharifi updated&position=updated position&phone_number=+998999999999&address=addr updated&company_id=3",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"employee",
+								"3"
+							],
+							"query": [
+								{
+									"key": "passport",
+									"value": "ZZ1234569"
+								},
+								{
+									"key": "last_name",
+									"value": "Familiya updated"
+								},
+								{
+									"key": "first_name",
+									"value": "Ism updated"
+								},
+								{
+									"key": "middle_name",
+									"value": "Sharifi updated"
+								},
+								{
+									"key": "position",
+									"value": "updated position"
+								},
+								{
+									"key": "phone_number",
+									"value": "+998999999999"
+								},
+								{
+									"key": "address",
+									"value": "addr updated"
+								},
+								{
+									"key": "company_id",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "company_name",
+									"value": "Company 1",
+									"type": "default"
+								},
+								{
+									"key": "director",
+									"value": "Director",
+									"type": "default"
+								},
+								{
+									"key": "address",
+									"value": "Address",
+									"type": "default"
+								},
+								{
+									"key": "email",
+									"value": "email@test.com",
+									"type": "default"
+								},
+								{
+									"key": "website",
+									"value": "website.com",
+									"type": "default"
+								},
+								{
+									"key": "phone_number",
+									"value": "+998999999999",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/employee/3",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"employee",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/employee",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"employee"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "email@test.com",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
